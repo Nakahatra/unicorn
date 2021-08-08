@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;}
+
+body {
+  /* background-color: #7AD592; */
+  background-image: url(../images/bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+}
+
+:root {
+  --dark-blue: #1e2640;
+  --light: #f3eac0;
+  --desert-sun: #dc9750;
+  --rose-red: #922c40;
+  --green: #71ff99;
+}
+
+.btn-go-up div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.btn-go-up:hover {
+  transform: translateY(5px);
+}
+
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 70px;
+  width: 100%;
+}
+
+.logo a img{
+  justify-content: space-between;
+  text-align: right;
+  width: 50%;
+}
+
+.nav-area {
+  list-style: none;
+  text-decoration: none;
+}
+
+.nav-area li {
+  display: inline-block;
+  padding: 0 15px;
+  text-transform: uppercase;
+}
+
+.nav-area li a {
+  transition: 0.3s;
+  color: white;
+  text-decoration: none;
+  /* font-weight: 900; */
+}
+
+.hero-section {
+  margin-top: 5%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10%;
+  align-items: center;
+}
+
+main .main-header {
+  text-align: center;
+}
+
+main .main-header p {
+  font-size: 50px;
+}
+
+#card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 10%;
+}
+
+#card-parent {
+  margin: 50px;
+  max-width: 300px;
+  background-color: #03dac5;
+}
+
+#card-parent .card-img img {
+  width: 100%;
+  overflow: hidden;
+  transition: 1s ease;
+}
+
+#card-parent .card-img img:hover {
+  transform: scale(1.1);
+}
+
+#card-parent .card-details {
+  padding: 15px;
+}
+
+#card-parent .card-details .card-title p {
+  font-size: 35px;
+  font-weight: 100;
+}
+
+#card-parent .card-details .card-author p {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+#card-parent .card-button-container {
+  padding: 0 40px;
+  transform: translateY(30px);
+}
+
+#card-parent .card-buttons {
+  display: flex;
+  justify-content: center;
+  background-color: #6200ee;
+  padding: 20px 0;
+}
+
+#card-parent .card-buttons > * {
+  padding: 0 30px;
+  color: white;
+}
+

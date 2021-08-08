@@ -1,0 +1,126 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: 'Raleway', sans-serif; */
+    font-family: 'Comfortaa', cursive;
+}
+
+:root{
+    --dark-blue: #1E2640;
+    --light: #F3EAC0;
+    --desert-sun: #DC9750;
+    --rose-red: #922C40;
+}
+
+body{
+    background-image: url(../images/bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+
+#login-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20%;
+    margin-right: 20%;
+}
+
+#login-section .login-img img{
+    width: 50%;
+    margin-left: 30%;
+}
+.login-img{
+    animation: left 1s ease-in alternate;
+}
+
+#login-section .login .header p{
+    font-size: 40px;
+    padding-bottom: 40px;
+    text-align: center;
+}
+
+#login-section .login form{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#login-section .login .username, .password{
+    font-size: 30px;
+    outline: none;
+    border-right: none;
+    border-top: none;
+    border-left: none;
+    border-bottom: 2px solid white;
+    background: transparent;
+    text-align: center;
+
+}
+::placeholder{
+    color: white;
+}
+
+#login-section .login .username-parent , .password-parent{
+    text-align: center;
+}
+
+.username{
+    margin-bottom: 30px;
+}
+
+.submit-btn{
+    display: flex;
+    justify-content: center;
+}
+
+.submit-btn button{
+    border: none;
+    outline: none;
+    background: var(--dark-blue);
+    color: white;
+    font-size: 20px;
+    padding: 15px 50px;
+    border-radius: 30px;
+    margin-top:40px;
+    cursor: pointer;
+}
+
+
+@media (max-width: 1100px){
+    #login-section{
+        display: block;
+        margin: 0;
+        margin-top: 20%;
+    }
+    #login-section .login-img{
+        text-align:center;
+    }
+    #login-section .login-img img{
+        margin: 0;
+    }
+}
+
+@keyframes left{
+    from{
+        transform: translateX(-1000px);
+    }
+    to{
+        transform: translateX(0px);
+    }
+}
+@keyframes right{
+    from{
+        transform: translateX(1000px);
+    }
+    to{
+        transform: translateX(0px);
+    }
+}
+
